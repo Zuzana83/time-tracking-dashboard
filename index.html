@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./main.css">
+  
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; margin-top: 1.5rem;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <section class="cards">
+    <!-- Big card -->
+    <article class="card-big">
+      <div class="user-info">
+        <div class="img-wrapper">
+          <img src="./images/image-jeremy.png" alt="user picture" class="user-img">
+        </div>
+        <div class="user-detail">
+          <span>Report for</span>
+          <p class="user-name">Jeremy Robson</p>
+        </div>
+      </div>
+      <div class="time">
+        <button type="button" id="daily">Daily</button>
+        <button type="button" class="active" id="weekly">Weekly</button>
+        <button type="button" id="monthly">Monthly</button>
+      </div>
+    </article>
+    <!-- Small Cards -->
+    <article class="card work">
+      <div class="card-icon">
+        <img src="./images/icon-work.svg" alt="briefcase icon">
+      </div>
+      <div class="card-content">
+        <div class="content-header">
+          <h3 class="activity">Work</h3>
+          <img src="./images/icon-ellipsis.svg" alt="menu settings icon" class="menu-icon">
+        </div>
+        <div class="card-time">
+          <p class="hours"><span>32</span>hrs</p>
+          <p class="last-week">Last Week - <span>36</span>hrs</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="card play">
+      <div class="card-icon">
+        <img src="./images/icon-play.svg" alt="joystick icon">
+      </div>
+      <div class="card-content">
+        <div class="content-header">
+          <h3 class="activity">Play</h3>
+          <img src="./images/icon-ellipsis.svg" alt="menu settings icon" class="menu-icon">
+        </div>
+        <div class="card-time">
+          <p class="hours"><span>10</span>hrs</p>
+          <p class="last-week">Last Week - <span>8</span>hrs</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="card study">
+      <div class="card-icon">
+        <img src="./images/icon-study.svg" alt="book icon">
+      </div>
+      <div class="card-content">
+        <div class="content-header">
+          <h3 class="activity">Study</h3>
+          <img src="./images/icon-ellipsis.svg" alt="menu settings icon" class="menu-icon">
+        </div>
+        <div class="card-time">
+          <p class="hours"><span>4</span>hrs</p>
+          <p class="last-week">Last Week - <span>7</span>hrs</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="card exercise">
+      <div class="card-icon">
+        <img src="./images/icon-exercise.svg" alt="exercice icon">
+      </div>
+      <div class="card-content">
+        <div class="content-header">
+          <h3 class="activity">Exercise</h3>
+          <img src="./images/icon-ellipsis.svg" alt="menu settings icon" class="menu-icon">
+        </div>
+        <div class="card-time">
+          <p class="hours"><span>4</span>hrs</p>
+          <p class="last-week">Last Week - <span>5</span>hrs</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="card social">
+      <div class="card-icon">
+        <img src="./images/icon-social.svg" alt="social icon">
+      </div>
+      <div class="card-content">
+        <div class="content-header">
+          <h3 class="activity">Social</h3>
+          <img src="./images/icon-ellipsis.svg" alt="menu settings icon" class="menu-icon">
+        </div>
+        <div class="card-time">
+          <p class="hours"><span>5</span>hrs</p>
+          <p class="last-week">Last Week - <span>10</span>hrs</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="card self-care">
+      <div class="card-icon">
+        <img src="./images/icon-self-care.svg" alt="self care icon">
+      </div>
+      <div class="card-content">
+        <div class="content-header">
+          <h3 class="activity">Self Care</h3>
+          <img src="./images/icon-ellipsis.svg" alt="menu settings icon" class="menu-icon">
+        </div>
+        <div class="card-time">
+          <p class="hours"><span>2</span>hrs</p>
+          <p class="last-week">Last Week - <span>2</span>hrs</p>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
